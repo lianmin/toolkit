@@ -15,13 +15,4 @@ export class APIController {
     const user = await this.userService.getUser({ uid });
     return { success: true, message: 'OK', data: user };
   }
-
-  @Get('/config')
-  async getConfig(){
-    return {
-      code: '0000',
-      success: true,
-      message:'success'
-    }
-  }
 }
